@@ -112,13 +112,11 @@ filterLongWords(["twist", "fist", "mountain", "count", "eat"], 4);
 // Bonus 2 
 
 function charactersOccurencesCount(string) {
-	var objectVar = {};
-	var character;
+	var objectVar = new Object;
 	var count = 0;
 	for (var i = 0; i < string.length; i ++) {
-		character = string[i];
 		for (var j = 0; j < string.length; j ++) {
-			if (string[j] == string[i]) {
+			if (string[i] == string[j]) {
 				count ++;
 			}
 			objectVar[string[i]] = count;
@@ -127,24 +125,7 @@ function charactersOccurencesCount(string) {
 	}
 	console.log(objectVar)
 } 
-charactersOccurencesCount("strings");
+charactersOccurencesCount("aaxxbnnn");
 
 //comments:
 
-var str = "unitedstates";
-var obj = {};
-var temp = "";
-var count = 0;
-
-for (var i = 0; i < str.length; i ++) {
-	temp = str[i];
-	for (var j = 0; j < str.length; j ++) {
-		if (str[j] == str[i]) {
-			count ++;
-		}
-		obj[str[i]] = count;
-	}
-	temp = "";
-	count = 0;
-}
-console.log(obj);
