@@ -112,8 +112,39 @@ filterLongWords(["twist", "fist", "mountain", "count", "eat"], 4);
 // Bonus 2 
 
 function charactersOccurencesCount(string) {
-
+	var objectVar = {};
+	var character;
+	var count = 0;
+	for (var i = 0; i < string.length; i ++) {
+		character = string[i];
+		for (var j = 0; j < string.length; j ++) {
+			if (string[j] == string[i]) {
+				count ++;
+			}
+			objectVar[string[i]] = count;
+		}
+		count = 0;
+	}
+	console.log(objectVar)
 } 
+charactersOccurencesCount("strings");
 
 //comments:
 
+var str = "unitedstates";
+var obj = {};
+var temp = "";
+var count = 0;
+
+for (var i = 0; i < str.length; i ++) {
+	temp = str[i];
+	for (var j = 0; j < str.length; j ++) {
+		if (str[j] == str[i]) {
+			count ++;
+		}
+		obj[str[i]] = count;
+	}
+	temp = "";
+	count = 0;
+}
+console.log(obj);
