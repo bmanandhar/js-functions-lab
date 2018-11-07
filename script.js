@@ -67,8 +67,6 @@ var numberOfArguments = function(arguments) {
 
 numberOfArguments([1,3,6,9]);
 
-
-
 // Question 6
 var reverseString = function (string){
 	reversedString = "";
@@ -79,7 +77,6 @@ var reverseString = function (string){
 }
 
 reverseString("United States");
-
 
 // Question 7
 var findLongestWord = function(arrayOfWords) {
@@ -118,5 +115,5 @@ function charactersOccurencesCount(string) {
 
 } 
 
-
+//comments:
 
